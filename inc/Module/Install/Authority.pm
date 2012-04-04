@@ -1,0 +1,23 @@
+#line 1
+package Module::Install::Authority;
+use strict;
+use warnings;
+use base qw/Module::Install::Base/;
+
+our $VERSION = '0.01';
+$VERSION = eval $VERSION;
+
+sub authority {
+    my $self = shift;
+    my $pause_id = shift;
+    $self->Meta->{values}->{x_authority} = $pause_id;
+
+    use Data::Dumper;
+    warn Dumper($self->Meta->{values});
+}
+
+
+1;
+
+#line 53
+
