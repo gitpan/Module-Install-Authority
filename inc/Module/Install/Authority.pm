@@ -11,13 +11,9 @@ sub authority {
     my $self = shift;
     my $pause_id = shift;
     $self->Meta->{values}->{x_authority} = $pause_id;
-
-    use Data::Dumper;
-    warn Dumper($self->Meta->{values});
 }
-
 
 1;
 
-#line 53
+#line 69
 
